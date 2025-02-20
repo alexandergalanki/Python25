@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Change</title>
+  </head>
+  <body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    function change(color) {
+      function colorr() {
+        console.log(color);
+        document.body.style.backgroundColor = `${color}`;
+      }
+      return colorr;
+    }
+    document.getElementById("orange").onclick = change("orange");
+    document.getElementById("green").onclick = change("green");
+  </script>
+</html>
